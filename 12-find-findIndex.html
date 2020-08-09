@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // arr.find(func)  参数 ele  index arr
+    // 查找满足条件的  第一个元素  或  下标
+    // 找不到 undefined -1
+
+    let arr = [1,2,3,4,5]
+    var res =arr.find(function (ele,index,arr) {
+        console.log(ele,index,arr)
+        return true;
+    })
+    console.log(res)
+    var res1 =arr.findIndex(function (ele,index,arr) {
+        console.log(ele,index,arr)
+        return true;
+    })
+    console.log(res1)
+
+    var res2 =arr.find(function (ele,index,arr) {
+        console.log(ele,index,arr)
+        return ele%2;
+    })
+    console.log(res2)
+
+
+    var res3 =arr.findIndex(function (ele,index,arr) {
+        console.log(ele,index,arr)
+        return ele%2;
+    })
+    console.log(res3)
+
+
+    var res4 =arr.find(function (ele,index,arr) {
+        console.log(ele,index,arr)
+        if (ele < 0) {
+            return true
+        }
+    })
+
+    console.log(res4)
+
+    var res5 =arr.findIndex(function (ele,index,arr) {
+        console.log(ele,index,arr)
+        if (ele < 0) {
+            return true
+        }
+    })
+
+    console.log(res5)
+
+
+    // forEach  map返回值组成数组  filter 结果为true的元素组成数组   some 遇true为true     every 遇false为false
+
+
+
+
+</script>
+</body>
+</html>

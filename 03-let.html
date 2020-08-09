@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<script>
+    // let 变量名 = 变量值； 定义变量
+    // 没有变量提升
+    // console.log(a)
+    // let a = 10  // 报错
+
+    // 全局变量 没有 附加在 window对象上
+    // let a = 1;
+    // console.log(window.a) // undefined
+
+    // 不能重复定义
+    // let a = 1;
+    // let a = 19;
+    // console.log(a) // 报错  a=19 是 忘记写 var的全局变量
+
+    // 具有块级作用域
+    // var liArr = document.querySelectorAll('li');
+    // for (let i = 0 ; i < liArr.length ; i++){
+    //     liArr[i].onclick = function () {
+    //         console.log(i)
+    //     }
+    // }
+
+    // {
+    //     let a = 10;
+    // }
+    // console.log(a)
+
+    {
+        let a = 1;
+        {
+            console.log(a)
+        }
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>

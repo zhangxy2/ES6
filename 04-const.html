@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 书写规范 大写 多个单词 _链接
+
+    // 一旦声明 立即初始化
+    // 一旦定义 不允许修改
+    // const a;
+    // a = 19;
+
+    // 没有变量提升
+    // console.log(A)
+    // const A = 1;
+
+    // 全局变量 没有 附加在 window对象上
+    // const A = 1;
+    // console.log(window.A)
+
+    // 具有块级作用域
+    // {
+    //     const A = 1;
+    // }
+    // console.log(A)
+
+     // 本质： const 本质是不允许地址改变
+    const OBJ = {
+        name : 'jack',
+        age : 12
+    }
+    OBJ.name = 'rose';
+    console.log(OBJ)
+
+
+
+</script>
+</body>
+</html>

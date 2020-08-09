@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 解析规则 ：
+    // 默认值可选  可以指定默认值 也可以不屑
+    // 右边的属性名 等于 左侧的属性名 可以将右边的属性值 赋值给变量
+    // 如果变量匹配不成功 有默认值使用默认值  没有 un
+
+    // 变量名 等于属性名
+    // let obj = {
+    //     name : 'jack',
+    //     age : 12
+    // }
+    // let {name,age} = obj;
+    // console.log(name,age)
+
+    // 变量改名
+    // let obj = {
+    //     name : 'a',
+    //     age : 12
+    // }
+    // let {name : a ,age : b = 17,add=666} = obj
+    // console.log(a,b,add)
+
+    // 剩余值
+    // let obj = {
+    //     name: 'a',
+    //     age: 12,
+    //     a: 1,
+    //     b: 2
+    // }
+    // let {name :a=12,...b} = obj;
+    // console.log(a,b)
+
+    // 默认值
+
+    // 嵌套
+    let obj = {
+        name: "a",
+        age: 22,
+        skill: {
+            study: {
+                run: 'pao',
+                walk: 'zou'
+            },
+            play: {
+                phone: 'chiji',
+                computer: 'code'
+            }
+        }
+    }
+    let {skill : {play : {phone,computer}}} = obj;
+    console.log(phone, computer)
+
+    // 交换两个变量的值
+    var a = 10;
+    var b = 20;
+    var [a,b] = [b,a];
+    console.log(a,b)
+
+
+</script>
+</body>
+</html>

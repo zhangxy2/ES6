@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<script>
+    //  var关键字 创建变量
+    // 变量提升 可以先使用再定义
+    // console.log(a) // undefined
+    // var a = 10
+
+    // 全局变量 定义在 window对象上
+    // b = 100
+    // console.log(window.b)
+
+    // 没有块级作用域
+    var liArr = document.querySelectorAll('li')
+    for (var i = 0; i < liArr.length; i++){ // for循环里面有绑定事件  闭包问题
+        liArr[i].onclick = function () {
+            console.log(i); // 5
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

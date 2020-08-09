@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 扩展运算符 rest获取多余的参数 保存到数组
+    // let fn = function (...rest) {
+    //     console.log(rest)
+    // }
+    // fn(1,2,3,4)
+
+    // 替代arguments  求参数的和
+
+    // function getSum() {
+    //     var sum = 0;
+    //     for (let i = 0 ; i < arguments.length; i++) {
+    //         sum = sum + arguments[i]
+    //     }
+    //     console.log(sum);
+    // }
+    // getSum(1,2,3,4,5)
+
+    //箭头函数中 没有 arguments 所以 用rest
+    let fn = (...value) => {
+        var sum = 0;
+        for (let i = 0 ; i < value.length; i++) {
+            sum = sum + value[i]
+        }
+        console.log(sum);
+    }
+    fn(1,2,3,4,5)
+
+
+
+</script>
+</body>
+</html>

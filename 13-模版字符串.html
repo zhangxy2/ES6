@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // ``  ${} 里面表达式 变量  可以换行
+
+    let obj = {
+        name : 'jack',
+        age : 18,
+        play : {
+            phone : 'chiji',
+            computer : 'code'
+        }
+    }
+
+    var html = `
+        <li>${obj.name}</li>
+        <li>${obj.age}</li>
+        <li>${obj.play.phone}</li>
+        <li>${obj.play.computer}</li>
+    `
+    console.log(html);
+
+
+    // 字符串方法 ：
+
+    // includes
+    var str = 'abcdefg'
+    console.log(str.includes('c',1))
+
+    // startsWith
+
+    console.log(str.startsWith('a'))
+
+    // endsWith
+    console.log(str.endsWith('g'))
+
+    // repeat
+    console.log(str.repeat(5));
+
+
+</script>
+</body>
+</html>

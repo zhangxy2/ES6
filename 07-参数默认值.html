@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 函数的拓展
+    // 参数默认值
+    function f(a = 1, b = 2, c) {
+        console.log(a, b, c)
+    }
+
+    f(100) // 100,2,undefined
+
+    // 解构赋值
+    function f1({name: a = 12, age: b = 13, c = 100} = {}) {
+        console.log(a,b,c)
+    }
+
+    f1(120)
+
+
+</script>
+
+</body>
+</html>

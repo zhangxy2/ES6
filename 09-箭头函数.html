@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //  什么是箭头函数  基本使用
+    // let fn = () => {
+    //     console.log(1234567)
+    // }
+    // fn()
+    // function 改到（） {}之间  => 是func
+    // => 中间不能有空格
+
+    // 简写
+    // 只有一个参数 省略（）
+    // let fn = a => {
+    //     console.log(a)
+    // }
+    // fn(123)
+
+    // 只有一个语句 省略 {}
+    // let fn = a => console.log(a)
+    // fn(2345)
+
+    // 返回值 切只有一个语句 省略 return {}
+    // let fn = a => a*3
+    // console.log(fn(1));
+
+    // 返回值是对象 要有（）
+    // let fn = b => ({a:1})
+    // console.log(fn())
+
+    // 与普通函数的区别
+    // 没有arguments
+    // let fn = () =>{
+    //     console.log(arguments) //报错
+    // }
+    // fn(1,2,3)
+
+    // this  指当前所在作用域 以外的对像
+    // var name = 'rose'
+    // let obj = {
+    //     name : 'a',
+    //     f1 : function () {
+    //         console.log(this); // obj
+    //         console.log(this.name) // a
+    //     },
+    //     f2 : () => {
+    //         console.log(this) //window
+    //         console.log(this.name) //rose
+    //     }
+    // }
+    // obj.f1()
+    // obj.f2()
+
+    // 不能做构造函数
+    let fn = () => {
+        console.log(23456)
+    }
+    // console.log(new fn()); // 报错
+
+
+</script>
+</body>
+</html>
